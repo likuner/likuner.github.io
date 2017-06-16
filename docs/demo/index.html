@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>李坤の小屋</title>
+	<link rel="shortcut icon" href="./image/index.png">
+	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./style/style.css">
+	<script src="./script/jquery-2.1.3.min.js"></script>
+	<script src="./bootstrap/bootstrap.min.js"></script>
+	<script src="./script/base.js"></script>
+	<script src="./script/timer.js"></script>
+	<script>
+		$(function(){
+			// alert($('#lunbo').width());
+		});
+	</script>
+</head>
+<body>
+	<a id="top"></a>
+	<header>
+		<div id="pic"><a href="index.html"><img class="img-circle" src="./image/86.jpg" alt="头像"></a></div>
+		<div id="bt"><h1>李坤の小屋</h1></div>
+		<ul id="nav" class="nav nav-pills nav-justified">
+			<li id="yi" class="btn btn-info btn-sm">
+				<span class="glyphicon glyphicon-home"></span>
+				首页
+			</li>
+			<li id="er" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-book"></span>
+				日志
+			</li>
+			<li id="san" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-education"></span>
+				关于
+			</li>
+			<li id="si" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-flag"></span>
+				留言
+			</li>
+		</ul>
+		<div id="timer"></div>
+	</header>
+	<div id="lunbo" class="carousel slide" data-ride="carousel">
+  		<!-- Indicators -->
+	  	<ol class="carousel-indicators">
+		    <li data-target="#lunbo" data-slide-to="0" class="active"></li>
+		    <li data-target="#lunbo" data-slide-to="1"></li>
+		    <li data-target="#lunbo" data-slide-to="2"></li>
+		    <li data-target="#lunbo" data-slide-to="3"></li>
+	  	</ol>
+	  	<!-- Wrapper for slides -->
+	  	<div class="carousel-inner" role="listbox">
+		    <div class="item active">
+			    <img src="./image/lb1.jpg" width="1024px" height="300px" alt="...">
+			    <div class="carousel-caption">
+			    	<!-- <h3>1</h3> -->
+    				<p>......</p>
+			    </div>
+	    	</div>
+	    	<div class="item">
+		      	<img src="./image/lb2.jpg" width="1024px" height="300px" alt="...">
+		      	<div class="carousel-caption">
+		        	<!-- <h3>2</h3> -->
+    				<p>......</p>
+		      	</div>
+	    	</div>
+	    	<div class="item">
+		      	<img src="./image/lb3.jpg" width="1024px" height="300px" alt="...">
+		      	<div class="carousel-caption">
+		        	<!-- <h3>3</h3> -->
+    				<p>......</p>
+		      	</div>
+	    	</div>
+	    	<div class="item">
+		      	<img src="./image/lb4.jpg" width="1024px" height="300px" alt="...">
+		      	<div class="carousel-caption">
+		        	<!-- <h3>4</h3> -->
+    				<p>......</p>
+		      	</div>
+	    	</div>
+	  	</div>
+	  	<!-- Controls -->
+	  	<a class="left carousel-control" href="#lunbo" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+	  	</a>
+	  	<a class="right carousel-control" href="#lunbo" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+	  	</a>
+	</div>
+	<a id="rizhi"></a>
+	<!-- content -->
+	<div id="content">
+		<!-- left -->
+		<div id="left">
+			<div class="arti">
+				<div class="timu">
+					<h2><a href="./article/art1.html" target="_blank">响应式网页设计</a></h2>
+				</div>
+				<h4 class="time"><a href="##">2015/12/24</a></h4>
+				<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+				<p>
+					响应式Web设计(Responsive Web design)的理念是: 集中创建页面
+					的图片排版大小,可以智能地根据用户行为以及使用的设备环境(系统平台、屏幕尺寸、屏幕定向等)进行
+					相对应的布局。
+				</p>
+				<p>
+					页面的设计与开发应当根据用户行为以及设备环境(系统平台、
+					屏幕尺寸、屏幕定向等)进行相应的响应和调整。具体的实践方式由多方面组成,包括弹性网格和布局、图片、CSS media query的使用等......
+				</p>
+				<div class="morecom">
+					<a class="more btn btn-info btn-xs" href="./article/art1.html" target="_blank">
+						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+						阅读全文
+					</a>
+					<a class="com btn btn-info btn-xs">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						赞
+						<span class="zan badge">99+</span>
+					</a>
+				</div>
+			</div>
+			<div class="arti">
+				<div class="timu">
+					<h2><a href="./article/art2.html" target="_blank">Position和float的用法详解</a></h2>
+				</div>
+				<h4 class="time"><a href="##">2015/12/23</a></h4>
+				<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+				<p>
+					“文档流“：在css中有一个z-index属性，因为网页是“立体的”，它有z轴，这个z轴的大小就由
+					z-index控制。默认情况下，所有页面元素均位于z-index:0这一层，而这一层顺序排列的元素就构成了“文档流”。无论是position还是float，它们都是通过改变文档流来实现定位。
+				</p>
+				<p>
+					css有三种基本的定位机制：文档流、浮动和绝对定位。除非专门指定，否则所有元素都在文档流中定位。也就是说，文档流中的元素的位置由元素在 X(HTML) 中的位置决定。css定位的基本思想很简单，它允许你使得元素相对于其正常应该出现的位置......
+				</p>
+				<div class="morecom">
+					<a class="more btn btn-info btn-xs" href="./article/art2.html" target="_blank">
+						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+						阅读全文
+					</a>
+					<a class="com btn btn-info btn-xs">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						赞
+						<span class="badge">99+</span>
+					</a>
+				</div>
+			</div>
+			<div class="arti">
+				<div class="timu">
+					<h2><a href="./article/art3.html" target="_blank">阑珊处的温暖，只有文字记得</a></h2>
+				</div>
+				<h4 class="time"><a href="##">2015/12/20</a></h4>
+				<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+				<p>
+					时光，载着几许婉约的叹息，越过寂寥的长夜，在云水深处，静默成一幅浓淡相宜的画卷。一些人，在素淡的流年里渐行渐远，而一些人，无论世事如何变迁，却始终不离不弃的陪在你身边。翻开那些旧词残章，曾经写过的诗句，在发黄的纸页上依旧清新如昨。
+				</p>
+				<p>
+					那些阑珊处的温暖，如一场温润的烟雨，留在记忆深处，那些美丽的片段，让我可想，可念，可眷恋。回眸，那一篇篇写过的文字，依旧静好如初，字里行间的留下的温情，让我忘了还有忧伤，忘了还有寒凉。不舍时光老去，不舍燕去花落......
+				</p>
+				<div class="morecom">
+					<a class="more btn btn-info btn-xs" href="./article/art3.html" target="_blank">
+						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+						阅读全文
+					</a>
+					<a class="com btn btn-info btn-xs">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						赞
+						<span class="badge">99+</span>
+					</a>
+				</div>
+			</div>
+			<div class="arti">
+				<div class="timu">
+					<h2><a href="./article/art4.html" target="_blank">捻字为香，秋收冬藏</a></h2>
+				</div>
+				<h4 class="time"><a href="##">2015/12/18</a></h4>
+				<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+				<p>
+					秋韵婉婉而入，候鸟的歌儿唱着千回百转，秋风吹起落叶演绎着另一类繁华，这是大自然自己的剧院，绿色和黄色环绕出生命的从头至此，夕阳西下后的流云晚霞，再次把秋韵着色，层林间最美的还是这一刻的橘黄。
+				</p>
+				<p>
+					凉意已是深深，才是菊花盛开的时日，山腰树脚常常会看到菊花，常常想，菊花的花瓣是所有花里面最多的，或许是因为这些季节的凉薄吧。
+				</p>
+				<p>
+					秋，多感的季节，常常驻足在秋风里，回忆一些岁月......
+				</p>
+				<div class="morecom">
+					<a class="more btn btn-info btn-xs" href="./article/art4.html" target="_blank">
+						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+						阅读全文
+					</a>
+					<a class="com btn btn-info btn-xs">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						赞
+						<span class="badge">99+</span>
+					</a>
+				</div>
+			</div>
+			<div class="arti">
+				<div class="timu">
+					<h2><a href="./article/art5.html" target="_blank">爱情里，守一座城，念一个人</a></h2>
+				</div>
+				<h4 class="time"><a href="##">2015/12/16</a></h4>
+				<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+				<p>
+					静美的岁月里，守着一方城池，因为有爱，更因为一个人，爱上一座
+					冰冷的城。在冰冷的城池里，寻找爱情遗留下的痕迹，斑斑驳驳，影影绰绰。思念一个人，想念一座城，在城池的每一个角落里，洒落想念的种子，等来年飘来的细雨，滋润绵绵的长情。
+				</p>
+				<p>
+					喜欢一座陌生的城市，更喜欢一个人漫无目的的走在陌生的街道上，看车水马龙，人来人往，穿梭在每一个大街小巷，感受不一样的乡土气息，人文地理......
+				</p>
+				<div class="morecom">
+					<a class="more btn btn-info btn-xs" href="./article/art5.html" target="_blank">
+						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+						阅读全文
+					</a>
+					<a class="com btn btn-info btn-xs">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						赞
+						<span class="badge">99+</span>
+					</a>
+				</div>
+			</div>
+			<div class="arti">
+				<div class="timu">
+					<h2><a href="./article/art6.html" target="_blank">风华不过指间沙</a></h2>
+				</div>
+				<h4 class="time"><a href="##">2015/12/15</a></h4>
+				<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+				<p>
+					有人说，风华是一指流砂，而苍老是一段年华。风华褪去，遗留下的只是万点邪魅的腥红，妖冶，美丽。我从未相信，历经过撕心裂肺的痛，便会牵得天荒地老的伤感。风华褪尽，一指流砂，落拓的是繁华哀伤的悲，遗落千年，亘古不息。
+				</p>
+				<p>
+					我一直都是情感的奴，跳不出痴心的迷途。生死之间，始终以醇酒香车惶惶度日。这一世，拱手山河，不为来生，只为觅到自己许心的那段......
+				</p>
+				<div class="morecom">
+					<a class="more btn btn-info btn-xs" href="./article/art6.html" target="_blank">
+						<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+						阅读全文
+					</a>
+					<a class="com btn btn-info btn-xs">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+						赞
+						<span class="badge">99+</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- right -->
+		<div id="right">
+			<div class="kuai" id="myinfo" >
+				<div id="myname">
+					<h4><span class="glyphicon glyphicon-user"></span>&nbsp;姓名: 李坤</h4>
+				</div>
+				<div id="mystar">
+					<h4><span class="glyphicon glyphicon-gift"></span>&nbsp;星座: 白羊座</h4>
+				</div>
+				<div id="mybirth">
+					<h4><span class="glyphicon glyphicon-sound-5-1"></span>&nbsp;生日: 1991/03/24</h4>
+				</div>
+				<div id="mywords">
+					<p>
+						<span class="glyphicon glyphicon-heart"></span>&nbsp;生命需要耐心，要做个耐撕的人，否则，错过自己，生命因此将是一场浪费...
+					</p>
+				</div>
+				<div id="myconn">
+					<button data-toggle="popover" data-container="body" data-content="OICQ: 273676636" data-placement="left">
+						<img src="./image/qq.jpg" alt="qq">
+					</button>
+					<button id="mywx">
+						<img src="./image/wx.jpg" alt="wx">
+					</button>
+					<span id="mywb" title="我的微博..">
+						<a href="http://weibo.com/optimisticlk" target="_blank">
+							<img src="./image/wb.jpg" alt="wb">
+						</a>
+					</span>
+					<button data-toggle="modal" data-target="#email" title="我的邮箱..">
+						<img src="./image/yx.jpg" alt="yx">
+					</button>
+					<img id="wxewm" src="./image/ewm.jpg" alt="ewm">
+				</div>
+			</div>
+			<div class="kuai" id="shipin">
+				<video width="305px" height="210px" controls loop poster="./image/vt.jpg">
+					<source src="./media/VanillaTwilight.mp4">
+				</video>
+			</div>
+			<div class="kuai" id="mytags">
+				<span class="glyphicon glyphicon-tag"><a href="##">Web前端</a></span>
+				<span class="glyphicon glyphicon-tag"><a href="##">jQuery</a></span>
+				<span class="glyphicon glyphicon-music" data-toggle="modal" 
+					data-target="#sszymmh"><a href="##">郁闷ing</a></span>
+				<span class="glyphicon glyphicon-music" data-toggle="modal" 
+					data-target="#sszymmh"><a href="##">有时有些放纵有时有些放不开</a></span>
+				<span class="glyphicon glyphicon-tag"><a href="##">CSS3</a></span>
+				<span class="glyphicon glyphicon-tag"><a href="##">HTML5</a></span>
+				<span class="glyphicon glyphicon-tag"><a href="##">响应式设计</a></span>
+				<span class="glyphicon glyphicon-music" data-toggle="modal" 
+				  data-target="#sszymmh"><a href="##">住地下室的苦Bility未脱单大龄白羊座青年</a>
+				</span>
+				<span class="glyphicon glyphicon-tag"><a href="##">Bootstrap</a></span>
+				<span class="glyphicon glyphicon-tag"><a href="##">JavaScript</a></span>
+				<!-- <a id="lk">123456789</a> -->
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="email">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        				<span aria-hidden="true">&times;</span>
+        			</button>
+       				<h4 class="modal-title">电子邮箱:</h4>
+      			</div>
+      			<div class="modal-body">
+        			<p>13051599902@163.com</p>
+      			</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+				</div>
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="sszymmh">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        				<span aria-hidden="true">&times;</span>
+        			</button>
+       				<h4 class="modal-title">
+       					<i class="glyphicon glyphicon-headphones"></i>
+       					(Everything I Do) I Do It For You
+       				</h4>
+      			</div>
+      			<div class="modal-body">
+        			<p>
+        				<audio src="./media/IDoItForYou.mp3" controls loop></audio>
+        			</p>
+      			</div>
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+				</div> -->
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<!--
+	<nav>
+	  <ul class="pagination">
+	    <li>
+	      <a href="#" aria-label="Previous">
+	        <span aria-hidden="true">&laquo;</span>
+	      </a>
+	    </li>
+	    <li><a href="#">1</a></li>
+	    <li><a href="#">2</a></li>
+	    <li class="active"><a href="#">3</a></li>
+	    <li><a href="#">4</a></li>
+	    <li><a href="#">5</a></li>
+	    <li>
+	      <a href="#" aria-label="Next">
+	        <span aria-hidden="true">&raquo;</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+-->
+
+	<a class="btn btn-default btn-sm" id="totop" href="#top"> 
+		<span class="glyphicon glyphicon-send"></span> 
+		<span>回到顶部</span>
+	</a>
+
+	<footer>
+		<span class="glyphicon glyphicon-apple"></span>
+		Copyright -<a href="##">Li Kun</a>- 2015 All rights reserved
+	</footer>
+</body>
+</html>

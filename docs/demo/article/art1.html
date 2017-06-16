@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>响应式网页设计</title>
+	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../style/art.css">
+	<script src="../script/jquery-2.1.3.min.js"></script>
+	<script src="./bootstrap/bootstrap.min.js"></script>
+	<script src="../script/art.js"></script>
+</head>
+<body>
+	<div class="nav">
+		<a id="yi" class="btn btn-success btn-sm" href="../index.html">
+			<span class="glyphicon glyphicon-home"></span>
+			首页
+		</a>
+		<a id="er" class="btn btn-primary btn-sm" href="../index.html#rizhi">
+			<span class="glyphicon glyphicon-book"></span>
+			日志
+		</a>
+		<a id="san" class="btn btn-success btn-sm" href="../resume/cv.html">
+			<span class="glyphicon glyphicon-education"></span>
+			关于
+		</a>
+		<a id="si" class="btn btn-success btn-sm" href="../message/msg.html">
+			<span class="glyphicon glyphicon-flag"></span>
+			留言
+		</a>
+	</div>
+	<div class="box">
+		<div class="timu">
+			<h2><a href="##">响应式网页设计</a></h2>
+		</div>
+		<h4 class="time"><a href="##">2015/12/24</a></h4>
+		<h4 class="author">edited by: <a href="#lk">李坤</a></h4>
+		<p>
+			响应式Web设计(Responsive Web design)的理念是：集中创建页面的图片排版大小，可以智能地根据用户行为以及使用的设备环境（系统平台、屏幕尺寸、屏幕定向等）进行相对应的布局。
+		</p>
+		<p>
+			页面的设计与开发应当根据用户行为以及设备环境(系统平台、屏幕尺寸、屏幕定向等)进行相应的响应和调整。具体的实践方式由多方面组成，包括弹性网格和布局、图片、CSS media query的使用等。无论用户正在使用笔记本还是iPad，我们的页面都应该能够自动切换分辨率、图片尺寸及相关脚本功能等，以适应不同设备；换句话说，页面应该有能力去自动响应用户的设备环境。响应式网页设计就是一个网站能够兼容多个终端——而不是为每个终端做一个特定的版本。这样，我们就可以不必为不断到来的新设备做专门的版本设计和开发了。
+		</p>
+		<p>
+			Ethan Marcotte曾经在A List Apart发表过一篇文章"Responsive Web Design"，文中援引了响应式建筑设计的概念：现出现了一门新兴的学科——"响应式架构(responsive architecture)"——提出，物理空间应该可以根据存在于其中的人的情况进行响应。结合嵌入式机器人技术以及可拉伸材料的应用，建筑师们正在尝试建造一种可以根据周围人群的情况进行弯曲、伸缩和扩展的墙体结构；还可以使用运动传感器配合气候控制系统，调整室内的温度及环境光。已经有公司在生产"智能玻璃"：当室内人数达到一定的阈值时，这种玻璃可以自动变为不透明，确保隐私。
+		</p>
+		<p>
+			将这个思路延伸到Web设计的领域，我们就得到了一个全新的概念。为什么一定要为每个用户群各自打造一套设计和开发方案？和响应式建筑相似，Web设计同样应该做到根据不同设备环境自动响应及调整。
+			显然，我们无法也无需使用运动传感器或是机器人技术，响应式Web设计更多需要的是抽象思维。好在，一些相关的概念已经得到了实践，比如液态布局、帮助页面重新格式化的media queries和脚本等。但是响应式Web设计不仅仅是关于屏幕分辨率自适应以及自动缩放的图片等等，它更像是一种对于设计的全新思维模式。
+		</p>
+		<p>
+			一切弹性化：
+			我们通过响应式的设计和开发思路让页面更加"弹性"了。图片的尺寸可以被自动调整，页面液态图片技术
+			液态图片技术
+			布局再不会被破坏。虽然永远没有最完美的解决方案，但它给了我们更多选择。无论用户切换设备的屏幕定向方式，还是从台式机屏幕转到iPad上浏览，页面都会真正的富有弹性。
+			通过液态网格和液态图片技术，并且在正确的地方使用了正确的HTML标记。
+		</p>
+		<p>
+			响应式图片：
+			响应式图片技术思想：不仅要同比的缩放图片，还要在小设备上降低图片自身的分辨率。这个技术的实现需要使用几个相关文件，我们可以在Github上获取。包括一个JavaScript文件(rwd-images.js)，一个.htaccess文件，以及一些范例资源文件。大致的原理是，rwd-images.js会检测当前设备的屏幕分辨率，如果是大屏幕设备，则向页面head部分中添加BASE标记，并将后续的图片、脚本和样式表加载请求定向到一个虚拟路径"/rwd-router"。当这些请求到达服务器端，.htacces文件会决定这些请求所需要的是原始图片还是小尺寸的"响应式图片"，并进行相应的反馈输出。对于小屏幕的移动设备，原始尺寸的大图片永远不会被用到。
+		</p>
+		<br>
+		<div class="share">
+			<span>----------------------------</span>
+			<br>
+			<span class="fx">分享到: </span>
+			<a class="fx" href="##"><img src="../image/comwb.jpg" alt="##" title="分享到微博"></a>
+			<a class="fx" href="##"><img src="../image/comkj.jpg" alt="##" title="分享到空间"></a>
+			<a class="fx" href="##"><img src="../image/comwx.jpg" alt="##" title="分享到微信"></a>
+		</div>
+		<div class="comment">
+			<label for="com">我有话说...</label>
+			<textarea name="com" id="com" placeholder="请输入评论内容..."></textarea>
+			<button class="btn btn-default">
+				<span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;发布&nbsp;&nbsp;
+			</button>
+		</div>
+	</div>
+	<a class="btn btn-default btn-sm" id="totop" href="#top"> 
+		<span class="glyphicon glyphicon-send"></span> 
+		<span>回到顶部</span>
+	</a>
+</body>
+</html>
