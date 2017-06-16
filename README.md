@@ -52,8 +52,8 @@ class Rectanle{
 class Square extends Rectanle{
     constructor(size,type,flag){
         super(size,size,type);
-        this.flag = flag;  //定义flag，需在super()之后，否则this报错
-    }
+        this.flag = flag;  //定义flag，需在super()之后，否则this报错
+    }
     getFlag(){
         console.info(`flag: ${this.flag}`);
     }
