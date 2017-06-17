@@ -16,7 +16,8 @@ Rectangle.prototype.getArea = function(){
 function Square(size,type){
     Rectangle.call(this,size,size,type);  //借用父类的构造函数
 }
-Square.prototype = new Rectangle();  //子类的原型指向父类的一个实例，new Rectanle() 不需要参数
+//子类的原型指向父类的一个实例，new Rectanle() 不需要参数
+Square.prototype = new Rectangle();
 Square.prototype.constructor = Square;  //子类原型的构造器重新指向自己
 Square.prototype.say = function(){
     console.info("hello, I'm "+this.type);
